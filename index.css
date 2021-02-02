@@ -33,6 +33,7 @@ body {
 	width: 200px;
 	outline: none;
 	color: white;
+	transition: 0.25s;
 }
 
 .caja  a[id = "proyecto"]:hover, .caja a[id = "ejercicios"]:hover {
