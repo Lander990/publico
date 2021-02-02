@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Kyomirau - Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<form class="caja" name="Login" method="post" action="../index.html" onsubmit="return guardarUser()">
+		<h1>Login</h1>
+		<input type="text" id="nombre" name="nombre" placeholder="Usuario">
+		<input type="password" name="pwd" placeholder="Contraseña">
+		<input type="submit" value="Login">
+	</form>
+	<script type="text/javascript">
+		function guardarUser() {
+			sessionStorage.setItem("nomUser", document.forms["Login"]["nombre"].value);
+		}
+	</script>
+
+</body>
+</html>

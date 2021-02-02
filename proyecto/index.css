@@ -1,0 +1,53 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #666;
+	font-family: sans-serif;
+
+}
+
+.top-menu {
+	display: flex;
+	background-color: #111;
+	width: 100%;
+	height: 70px;
+	font-weight: 10px;
+	color: #F5F5F5;
+	text-align: center;
+	position: absolute;
+}
+
+.menu {
+	position: absolute;
+	top: 30%;
+	display: flex;
+	box-sizing: border-box;
+	width: 60%;
+}
+
+.entrada {
+	width: 10%;
+	margin: 5px;
+	display: inline-block;
+}
+#vacio {
+	background-color: none;
+}
+
+.mouse:hover{
+	color: limegreen;
+	cursor: pointer;
+}
+
+#login {
+	float: right;
+}
+
+
+.mouse:hover a{
+	color: limegreen;
+}
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}

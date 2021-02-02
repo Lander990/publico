@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Kyomiaru - Noticias de anime</title>
+	<meta charset="utf-8">
+	<meta title="Kyomiaru - Noticias interesantes sobre anime">
+	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<section class="top-menu">
+		<div class="menu">
+			<div id="inicio" class="entrada mouse">Inicio</div>
+			<div id="noticias" class="entrada mouse">Noticias</div>
+			<div id="proximosEstrenos" class="entrada mouse">Proximos Extrenos</div>
+			<div id="contacto" class="entrada mouse">Contacto</div>
+			<!--<div id="usuario" class="entrada"></div> Aqui estara el nombre del usuario registrado-->
+			<div id="vacio" class="entrada"></div>
+			<div id="login" class="entrada mouse"><a href="login/login.html">Iniciar sesion</a></div>
+		</div>
+		<script type="text/javascript">
+			if (sessionStorage.getItem("nomUser") !== null) {
+				document.getElementById('vacio').innerHTML = "Bienvenido " + sessionStorage.getItem("nomUser");
+			} 
+
+		</script>
+	</section>
+</body>
+</html>
