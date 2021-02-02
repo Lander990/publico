@@ -1,124 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Restaurante Landers</title>
-	<style type="text/css">
-		@media screen and (max-width: 600px) {
-			span#grande {display: none;}
-			span {float: left; text-align: left;}
-			
-			
-		}
-		@media screen and (min-width: 601px) {
-			span#corto {display: none;}
-			
-
-		}
-		table{border: 1px solid black;}
-		tr:hover {background-color: #f5f5f5;}
-		
-	</style>
+	<meta charset="utf-8">
+	<title>Bienvenido!</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<form method="GET">
 
-		<label for="nmesa">¿En que mesa estas?: </label>
-		<select id="nmesa" name="Mesa">
-			<option value="1" selected="selected">1</option>
-			<option value="2">2</option>				
-			<option value="3">3</option>	
-			<option value="4">4</option>	
-			<option value="5">5</option>				
-		</select>
-		<br>
+	<div class="caja">
+		<h1>Hola!</h1>
+		<a id="proyecto" href="./proyecto/index.html">Proyecto</a>
+		<a id="ejercicios" href="./ejercicios/index.html">Ejercicios</a>
+	</div>
 
-		<table>
-			<tr>
-				<td>
-					<span id="grande"><label for="plato1">Macarrones con tomate</label></span>
-					<span id="corto"><label for="plato1">Macarrones.Tomate</label></span>
-					
-				</td>
-				<td><input type="checkbox"  id="plato1" name="MacarronesConTomate"></td>
-				<td>
-					<span id="grande"><label for="cantidadPlato1">Cantidad:</label></span>
-					<span id="corto"><label for="cantidadPlato1">Cant:</label></span>
-				</td>
-				<td><input type="text" name="cantidadPlato1" size="1"></td>
-			</tr>
-			<tr>
-				<td><label for="plato2">Albondigas</label></td>
-				<td><input type="checkbox"  id="plato2" name="Albondigas"></td>
-				<td>
-					<span id="grande"><label for="cantidadPlato2">Cantidad:</label></span>
-					<span id="corto"><label for="cantidadPlato2">Cant:</label></span>
-				</td>
-				<td><input type="text" name="cantidadPlato2" size="1"></td>
-			</tr>
-			<tr>
-				<td><label for="plato3">Pescado frito</label></td>
-				<td><input type="checkbox"  id="PescadoFrito" name="PescadoFrito"></td>
-				<td>
-					<span id="grande"><label for="cantidadPlato3">Cantidad:</label></span>
-					<span id="corto"><label for="cantidadPlato3">Cant:</label></span>
-				</td>
-				<td><input type="text" name="cantidadPlato3" size="1"></td>
-			</tr>
-			<tr>
-				<td>
-					<span id="grande"><label for="plato4">Tortilla de patatas</label></span>
-					<span id="corto"><label for="plato4">Tortilla.Patata</label></span>
-				</td>
-				<td><input type="checkbox"  id="plato4" name="Tortilla"></td>
-				<td>
-					<span id="grande"><label for="cantidadPlato4">Cantidad:</label></span>
-					<span id="corto"><label for="cantidadPlato4">Cant:</label></span>
-				</td>
-				<td><input type="text" name="cantidadPlato4" size="1"></td>
-			</tr>
-			<tr>
-				<td>
-					<span id="grande"><label for="plato5">Ensalada Cesar</label></span>
-					<span id="corto"><label for="plato5">Ens.Cesar</label></span>
-				</td>
-				<td><input type="checkbox"  id="plato5"  name="Ensalada"></td>
-				<td>
-					<span id="grande"><label for="cantidadPlato5">Cantidad:</label></span>
-					<span id="corto"><label for="cantidadPlato5">Cant:</label></span>
-				</td>
-				<td><input type="text" name="cantidadPlato5" size="1"></td>
-			</tr>
-			<tr>
-				<td>
-					<span id="grande"><label for="plato6">Hamburgues de Cerdo</label></span>
-					<span id="corto"><label for="plato6">Ham. Cerdo</label></span>
-				</td>
-				<td><input type="checkbox"  id="plato6" name="Hamburguesa"></td>
-				<td>
-					<span id="grande"><label for="cantidadPlato6">Cantidad:</label></span>
-					<span id="corto"><label for="cantidadPlato6">Cant:</label></span>
-				</td>
-				<td><input type="text" name="cantidadPlato6" size="1"></td>
-			</tr>
-			<tr>
-				<td>
-					<span id="grande"><label for="plato6">Hamburgues Vegetariana</label></span>
-					<span id="corto"><label for="plato6">Ham. Vegetariana</label></span>
-				</td>
-				<td><input type="checkbox"  id="plato7" name="HamburgesaVegetariana"></td>
-				<td>
-					<span id="grande"><label for="cantidadPlato7">Cantidad:</label></span>
-					<span id="corto"><label for="cantidadPlato7">Cant:</label></span>
-				</td>
-				<td><input type="text" name="cantidadPlato7" size="1"></td>
-			</tr>
-		</table>
-		<br>
-		<label for="Anotaciones">¿Algo que cambiar/agregar?: </label>
-		<input type="text" name="Anotaciones">
-		<br>
-		<input type="submit" name="Enviar">
-		<input type="reset" name="Borrar datos">
-	</form>
+
 </body>
 </html>
