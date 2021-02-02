@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Menu vertical</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<details>
@@ -11,5 +12,21 @@
 			<li><a href="https://lander990.github.io/publico/proyecto/">Proyecto</a></li>
 		</ul>
 	</details>
+
+	<label for="name">Nombre</label><br>
+	<input type="text" name="name" id="name"><br>
+	<label for="apellido">Apellido</label><br>
+	<input type="text" name="apellido" id="apellido"><br>
+
+	<script>
+		$(document).ready(function() {
+			$("input").focus(function() {
+				$(this).css("background-color", "#cccccc");
+			});
+			$("input").blur(function() {
+				$(this).css("background-color","#ffffff");
+			});
+		});
+	</script>
 </body>
 </html>
