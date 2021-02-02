@@ -1,0 +1,39 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.cajas {
+	display: flex;
+}
+
+
+
+
+#cajaAzul {
+	background-color: blue;
+	height: 100px;
+	width: 33%;
+
+}
+
+#cajaRoja {
+	background-color: red;
+	height: 100px;
+	width: 34%;
+	
+}
+
+#cajaVerde {
+	background-color: green;
+	height: 100px;
+	width: 33%;
+	
+}
+
+@media screen and (max-width: 600px) {
+	.cajas {display: block;}
+	#cajaAzul, #cajaVerde, #cajaRoja {width: 100%;}
+
+	
+}
