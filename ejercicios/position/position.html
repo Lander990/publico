@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamiento</title>
+	<style type="text/css">
+		#relativa {
+			/*El contenido mantiene su espacio, y lo amplia*/
+			position: relative;
+			margin-top:  30px;
+			margin-left: 30px;
+			color: green;
+		}
+
+		#fixed {
+			/*El contenido se desplaza hacia una posición relativa al inicio del viewport
+			(La zona que vemos en el momento) y djea libre su sitio original*/
+			position: fixed;
+			margin-top:  30px;
+			margin-left: 30px;
+			color: blue;
+		}
+
+		#absolute {
+			/*El contenido se desplaza hacia una posicion relativa a su ancestro mas cercano que este posicionaod, o al inicio del documento, y deja libre su sitio original*/
+			position: absolute;
+			margin-top:  30px;
+			margin-left: 30px;
+			color: green;
+		}
+
+		#sticky {
+			/*El contenido se desplaza hacia una posición relativa al inicio del viewport
+			(La zona que vemos en el momento) y djea libre su sitio original*/
+			position: sticky;
+			/*margin-top:  30px;
+			margin-left: 30px;*/
+			top: 10px;
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<h1>Posicionamiento</h1>
+	<p>Lorem</p>
+	<ol>
+		<li>Linea de texto</li>
+		<li id="sticky">Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li id="absolute">Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li id="fixed">Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+		<li>Linea de texto</li>
+	</ol>
+</body>
+</html>
