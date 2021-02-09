@@ -6,26 +6,29 @@
 		#relativa {
 			/*El contenido mantiene su espacio, y lo amplia*/
 			position: relative;
-			margin-top:  30px;
-			margin-left: 30px;
+			top:  30px;
+			left: 30px;
 			color: green;
+			background-color: yellow;
 		}
 
 		#fixed {
 			/*El contenido se desplaza hacia una posición relativa al inicio del viewport
 			(La zona que vemos en el momento) y djea libre su sitio original*/
 			position: fixed;
-			margin-top:  30px;
-			margin-left: 30px;
+			top:  30px;
+			left: 30px;
 			color: blue;
+			background-color: yellow;
 		}
 
 		#absolute {
 			/*El contenido se desplaza hacia una posicion relativa a su ancestro mas cercano que este posicionaod, o al inicio del documento, y deja libre su sitio original*/
 			position: absolute;
-			margin-top:  30px;
+			top:  30px;
 			margin-left: 30px;
 			color: green;
+			background-color: yellow;
 		}
 
 		#sticky {
@@ -36,12 +39,24 @@
 			margin-left: 30px;*/
 			top: 10px;
 			color: pink;
+			background-color: yellow;
 		}
+
+		#exterior {
+			position: absolute;
+			top: 200px;
+			background-color: gray;
+		}
+
+		
+
+
+
 	</style>
 </head>
 <body>
 	<h1>Posicionamiento</h1>
-	<p>Lorem</p>
+	<div id="exterior">
 	<ol>
 		<li>Linea de texto</li>
 		<li id="sticky">Linea de texto</li>
@@ -72,5 +87,6 @@
 		<li>Linea de texto</li>
 		<li>Linea de texto</li>
 	</ol>
+</div>
 </body>
 </html>

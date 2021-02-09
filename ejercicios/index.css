@@ -19,6 +19,7 @@ th {
 td, th {
 	height: 50px;
 	text-align: center;
+	width: auto;
 }
 table {
 	width: 50%;
