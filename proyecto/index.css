@@ -25,6 +25,12 @@ body {
 	width: 60%;
 }
 
+.menu a {
+	padding-left: 10px;
+	float: left;
+	overflow: hidden;
+}
+
 .entrada {
 	width: 10%;
 	margin: 5px;
