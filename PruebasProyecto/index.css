@@ -190,6 +190,14 @@ footer {
 
 }
 
+.contenedor-logo {
+	display: flex;
+}
+
+.contenedor-logo ul {
+	list-style: none;
+}
+
 @media screen and (max-width: 750px) {
 	nav, nav a, #login{
 		display: block;
