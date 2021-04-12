@@ -79,4 +79,8 @@ div.texto-en-imagen-centrado {
 		display: block;
 		float: none;
 	}
+
+	div.texto-en-imagen-centrado {
+		font-size: 30px;
+	}
 }
