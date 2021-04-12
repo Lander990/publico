@@ -6,44 +6,29 @@
 	<meta title="Kyomiaru - Noticias interesantes sobre anime">
 	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<section class="navbar">
-		<a class="mouse" href="">Inicio</a>
+	<nav>
+		<a class="mouse" href="" id="selected">Inicio</a>
 		<a class="mouse" href="">Noticias</a>
 		<a class="mouse" href="">Proximos Extrenos</a>
 		<a class="mouse" href="">Contacto</a>
 		<a id="vacio" class="entrada mouse"></a>
 		<a class="mouse" href="login/login.html" style="float: right;">Iniciar sesion</a>
-		<!-- <div class="menu">
-			<div id="inicio" class="entrada mouse"><a href="">Inicio</a></div>
-			<div id="noticias" class="entrada mouse"><a href="">Noticias</a></div>
-			<div id="proximosEstrenos" class="entrada mouse"><a href="">Proximos Extrenos</a></div>
-			<div id="contacto" class="entrada mouse"><a href="">Contacto</a></div>
-			<div id="usuario" class="entrada"></div> Aqui estara el nombre del usuario registrado
-			<div id="vacio" class="entrada"></div>
-			<div id="login" class="entrada mouse"><a href="login/login.html">Iniciar sesion</a></div>
-		</div> -->
 		<script type="text/javascript">
 			if (sessionStorage.getItem("nomUser") !== null) {
-				document.getElementById('vacio').innerHTML = "Bienvenido " + sessionStorage.getItem("nomUser");
-			} 
+				document.getElementById('vacio').innerHTML = "Perfil de " + sessionStorage.getItem("nomUser");
+				$("#vacio").css("border","1px solid");
+				$("#vacio").css("border-color","white");
+
+			}
 
 		</script>
-	</section>
-<!-- 	<div class="navbar">
-  		<a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div> 
-</div> -->
+	</nav>
+
+	<div class="imagen-con-texto">
+		
+	</div>
 </body>
 </html>
