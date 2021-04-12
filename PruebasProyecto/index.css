@@ -28,6 +28,7 @@ nav a {
 #vacio {
 	background-color: none;
 	border: none;
+	display: none;
 }
 
 #selected {
