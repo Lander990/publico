@@ -6,6 +6,7 @@
 	<meta title="Kyomiaru - Noticias interesantes sobre anime">
 	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -16,16 +17,7 @@
 		<a class="mouse" href="">Contacto</a>
 		<a id="vacio" class="entrada mouse"></a>
 		<a class="mouse" href="login/login.html" id="login">Iniciar sesion</a>
-		<script type="text/javascript">
-			if (sessionStorage.getItem("nomUser") !== null) {
-				$("#vacio").css("display","inherit");
-				document.getElementById('vacio').innerHTML = "Perfil de " + sessionStorage.getItem("nomUser");
-				$("#vacio").css("border","1px solid");
-				$("#vacio").css("border-color","white");
 
-			}
-
-		</script>
 	</nav>
 	<div class="imagen-con-texto">
 		<img class="imagen-con-texto" src="imagenes/fondo3.jpg">
@@ -61,7 +53,27 @@
 		</div>
 	</div>
 	<footer>
-		wrewerwe
+		<hr>
+		<div style="display: flex;">
+			<img src="imagenes/logo.jpg" class="logo">
+			<div class="texto-logo">
+				<ul style="list-style: none;">
+					<li>Antonio Delgado Vietes <i class="fa fa-copyright"></i></li>
+					<li>1º DAW - Cenec Malaga</li>
+					<li><a href="#">Creditos</a></li>
+				</ul>
+			</div>
+		</div>
 	</footer>
+	<script type="text/javascript">
+		if (sessionStorage.getItem("nomUser") !== null) {
+			$("#vacio").css("display","inherit");
+			document.getElementById('vacio').innerHTML = "Perfil de " + sessionStorage.getItem("nomUser");
+			$("#vacio").css("border","1px solid");
+			$("#vacio").css("border-color","white");
+
+		}
+
+	</script>
 </body>
 </html>

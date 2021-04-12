@@ -7,8 +7,6 @@ body {
 	margin: 0;
 	background-color: #666;
 	font-family: sans-serif;
-
-
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto 10vh;
@@ -34,6 +32,7 @@ nav a {
 	margin-bottom: 5px;
 	border: 1px solid;
 }
+
 
 /*Por defecto este div no se ve, aparece cuando un usuario registrado inicia sesión*/
 #vacio {
@@ -176,6 +175,19 @@ a:link, a:visited {
 footer {
 	grid-row: 4;
 	grid-column: 1 / span 3;
+}
+
+.logo {
+	height: 170px;
+	width: 170px;
+	border-radius: 100px;
+	object-fit: contain;
+}
+
+.texto-logo {
+	padding-top: 20px; 
+	color: white;
+
 }
 
 @media screen and (max-width: 750px) {
