@@ -4,11 +4,16 @@ body {
 	background-color: #666;
 	font-family: sans-serif;
 
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto 10vh;
 }
 
 nav {
   overflow: hidden;
   background-color: #333;
+  grid-column: 1 / span 3;
+  grid-row: 1;
 }
 
 nav a {
@@ -25,6 +30,7 @@ nav a {
   border: 1px solid;
 }
 
+/*Por defecto este div no se ve, aparece cuando un usuario registrado inicia sesión*/
 #vacio {
 	background-color: none;
 	border: none;
@@ -56,17 +62,18 @@ a:link, a:visited {
 
 div.imagen-con-texto {
 	position: relative;
+	grid-column: 1 / span 3;
+	grid-row: 2;
 }
 
 img.imagen-con-texto {
-	/*background-image: url("imagenes/fondo2.jpg");*/
 	width: 100%;
 	height: 400px;
 	object-fit: cover;
 }
 
-/* Prueba */
-div.texto-en-imagen-centrado {
+
+.texto-en-imagen-centrado {
   position: absolute;
   top: 50%;
   left: 49%;
@@ -75,13 +82,35 @@ div.texto-en-imagen-centrado {
   color: white;
   background-color: rgba(255,255,255,0.02);
 }
+
+.noticia1 {
+	grid-row: 3 / span 1;
+	grid-column: 1 / span 1;
+}
+
+.noticia2 {
+	grid-row: 3 / span 1;
+	grid-column: 2 / span 1;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.noticia3 {
+	grid-row: 3 / span 1;
+	grid-column: 3 / span 1;
+}
+
+footer {
+	grid-row: 4;
+	grid-column: 1 / span 3;
+}
+
 @media screen and (max-width: 750px) {
 	nav, nav a, #login{
 		display: block;
 		float: none;
 	}
 
-	div.texto-en-imagen-centrado {
+	.texto-en-imagen-centrado {
 		font-size: 30px;
 	}
 }
