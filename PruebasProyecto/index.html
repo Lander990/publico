@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Kyomiaru - Noticias de anime</title>
+	<title>Kyomiaru - Inicio</title>
 	<meta charset="utf-8">
 	<meta title="Kyomiaru - Noticias interesantes sobre anime">
 	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
@@ -11,8 +11,8 @@
 </head>
 <body>
 	<nav>
-		<a class="mouse" href="" id="selected">Inicio</a>
-		<a class="mouse" href="">Noticias</a>
+		<a class="mouse" href="#" id="selected">Inicio</a>
+		<a class="mouse" href="./noticias/noticias.html">Noticias</a>
 		<a class="mouse" href="">Proximos Extrenos</a>
 		<a class="mouse" href="">Contacto</a>
 		<a id="vacio" class="entrada mouse"></a>
@@ -65,15 +65,6 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript">
-		if (sessionStorage.getItem("nomUser") !== null) {
-			$("#vacio").css("display","inherit");
-			document.getElementById('vacio').innerHTML = "Perfil de " + sessionStorage.getItem("nomUser");
-			$("#vacio").css("border","1px solid");
-			$("#vacio").css("border-color","white");
-
-		}
-
-	</script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
