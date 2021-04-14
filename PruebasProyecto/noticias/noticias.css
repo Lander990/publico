@@ -104,6 +104,7 @@ main {
 	height: 150px;
 	width: 100%;
 	display: flex;
+
 /*		overflow: auto;
 	overflow-x: auto;*/
 	/*overflow-x: auto;*/
@@ -126,7 +127,7 @@ footer {
 
 h3 {
 	margin: 0 0 5px 0;
-	word-wrap: break-word;
+
 
 }
 
@@ -159,6 +160,10 @@ h3 {
 
 	.texto-en-imagen-centrado {
 		font-size: 30px;
+	}
+
+	.noticias {
+		display: block;
 	}
 
 

@@ -8,8 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="noticias.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../index.js"></script>
+
 </head>
-<body>
+<body onload="cargarUser()">
 	<nav>
 		<a class="mouse" href="../index.html">Inicio</a>
 		<a class="mouse" href="#" id="selected">Noticias</a>
@@ -19,7 +21,7 @@
 		<a class="mouse" href="../login/login.html" id="login">Iniciar sesion</a>
 
 	</nav>
-	<script type="text/javascript" src="../index.js"></script>
+	
 	<main>
 		<div class="caja-noticias">
 			<a href="#" class="noticia">
@@ -103,5 +105,6 @@
 			</div>
 		</div>
 	</footer>
+
 </body>
 </html>
