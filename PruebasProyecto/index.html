@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Kyomiaru - Noticias de anime</title>
+	<title>Kyomiaru - Inicio</title>
 	<meta charset="utf-8">
 	<meta title="Kyomiaru - Noticias interesantes sobre anime">
 	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<section class="navbar">
-		<a class="mouse" href="">Inicio</a>
-		<a class="mouse" href="">Noticias</a>
+	<nav>
+		<a class="mouse" href="#" id="selected">Inicio</a>
+		<a class="mouse" href="./noticias/noticias.html">Noticias</a>
 		<a class="mouse" href="">Proximos Extrenos</a>
 		<a class="mouse" href="">Contacto</a>
 		<a id="vacio" class="entrada mouse"></a>
-		<a class="mouse" href="login/login.html" style="float: right;">Iniciar sesion</a>
-		<!-- <div class="menu">
-			<div id="inicio" class="entrada mouse"><a href="">Inicio</a></div>
-			<div id="noticias" class="entrada mouse"><a href="">Noticias</a></div>
-			<div id="proximosEstrenos" class="entrada mouse"><a href="">Proximos Extrenos</a></div>
-			<div id="contacto" class="entrada mouse"><a href="">Contacto</a></div>
-			<div id="usuario" class="entrada"></div> Aqui estara el nombre del usuario registrado
-			<div id="vacio" class="entrada"></div>
-			<div id="login" class="entrada mouse"><a href="login/login.html">Iniciar sesion</a></div>
-		</div> -->
-		<script type="text/javascript">
-			if (sessionStorage.getItem("nomUser") !== null) {
-				document.getElementById('vacio').innerHTML = "Bienvenido " + sessionStorage.getItem("nomUser");
-			} 
+		<a class="mouse" href="login/login.html" id="login">Iniciar sesion</a>
 
-		</script>
-	</section>
-<!-- 	<div class="navbar">
-  		<a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div> 
-</div> -->
+	</nav>
+	<div class="imagen-con-texto">
+		<img class="imagen-con-texto" src="imagenes/fondo3.jpg">
+		<main class="texto-en-imagen-centrado">Bienvenido a Kyomiaru!. En esta pagina encontrarás diversas noticias relacionadas con el mundo de anime y proximos estrenos de estos.</main>
+	</div>
+	<div class="noticia1">
+		<a href="#">
+			<div class="noticia-1-texto-e-imagen">
+				<img src="imagenes/portada_shadows-house-14.jpg" class="imagen-portada-noticia1"/>
+				<div><b>El anime Shadow House tendrá 12 episodios.</b></div>
+			</div>
+		</a>
+
+	</div>
+	<div class="noticia2">
+		<a href="">
+			<div class="noticia-2-texto-e-imagen">
+				<img src="imagenes/mushoku-tensei-polemica.jpg" class="imagen-portada-noticia2">
+				<div><b>El director de Mushoku Tensei responde algunas preguntas.</b></div>
+			</div>
+		</a>
+	</div>
+	<div class="noticia3">
+		<div class="noticia-3-texto-e-imagen">
+			<a href="#">
+				<div class="noticia-3-texto-e-imagen">
+					<img src="imagenes/snk-eren.jpg" class="imagen-portada-noticia3">
+					<div><b>Se muestra el trailer de la segunda mitad de la temporada final
+					de Ataque a los titanes.</b></div>
+				</div>	
+			</a>
+
+		</div>
+	</div>
+	<footer>
+		<hr>
+		<div class="contenedor-logo">
+			<img src="imagenes/logo.jpg" class="logo">
+			<div class="texto-logo">
+				<ul>
+					<li>Antonio Delgado Vietes <i class="fa fa-copyright"></i></li>
+					<li>1º DAW - Cenec Malaga</li>
+					<li><a href="#">Creditos</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

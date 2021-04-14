@@ -8,15 +8,12 @@
 <body>
 	<form class="caja" name="Login" method="get" action="../index.html" onsubmit="return guardarUser()">
 		<h1>Login</h1>
-		<input type="text" id="nombre" name="nombre" placeholder="Usuario">
-		<input type="password" name="pwd" placeholder="Contraseña">
-		<input type="submit" value="Login">
+		<input type="text" id="nombre" name="nombre" placeholder="Usuario" required/>
+		<input type="password" name="pwd" placeholder="Contraseña" required/>
+		<input type="submit" value="Validar con XML" onclick="window.history.go(-1); return false;">
+		<input type="submit" value="Validar con JS" onclick="window.history.go(-1); return false;">
 	</form>
-	<script type="text/javascript">
-		function guardarUser() {
-			sessionStorage.setItem("nomUser", document.forms["Login"]["nombre"].value);
-		}
-	</script>
+	<script type="text/javascript" src="login.js"></script>
 
 </body>
 </html>
