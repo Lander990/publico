@@ -1,110 +1,124 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<title>Kyomiaru - Noticias</title>
-	<meta charset="utf-8">
-	<meta title="Kyomiaru - Noticias interesantes sobre anime">
-	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
-	<link rel="stylesheet" type="text/css" href="noticias.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../index.js"></script>
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Kyomiaru - Noticias</title>
+		<meta charset="utf-8">
+		<meta title="Kyomiaru - Noticias interesantes sobre anime">
+		<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
+		<link rel="stylesheet" type="text/css" href="noticias.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="noticias.js"></script>
 
-</head>
-<body onload="cargarUser()">
-	<nav>
-		<a class="mouse" href="../index.html">Inicio</a>
-		<a class="mouse" href="#" id="selected">Noticias</a>
-		<a class="mouse" href="">Proximos Extrenos</a>
-		<a class="mouse" href="">Contacto</a>
-		<a id="vacio" class="entrada mouse"></a>
-		<a class="mouse" href="../login/login.html" id="login">Iniciar sesion</a>
+	</head>
+	<body onload="cargarUser()">
+		<nav>
+			<a class="mouse" href="../index.html">Inicio</a>
+			<a class="mouse" href="#" id="selected">Noticias</a>
+			<a class="mouse" href="">Proximos Extrenos</a>
+			<a class="mouse" href="">Contacto</a>
+			<a id="vacio" class="entrada mouse"></a>
+			<a class="mouse" href="../login/login.html" id="login">Iniciar sesion</a>
 
-	</nav>
-	
-	<main>
-		<div class="caja-noticias">
-			<a href="#" class="noticia">
-				<img src="../imagenes/portada_shadows-house-14.jpg">
-				<div id="titulo-texto">
-					<h3>El anime Shadows House tendrá 12 episodios.</h3>
-					<div id="solo-texto">
-						En el sitio oficial para la adaptación animada del manga escrito e ilustrado por el grupo creativo Soumatou, Shadows House, se publicó la información de distribución de los paquetes Blu-ray/DVD recopilatorios. Esta información confirmó que la serie tendrá un total de trece episodios.
-					</div>
+		</nav>
+		
+		<main>
+			<div class="caja-noticias">
+				<div class="noticia">
+					<a href="#" class="in-noticia">
+						<img src="../imagenes/portada_shadows-house-14.jpg">
+
+						<p>
+							<b id="titulo-noticia">El anime Shadow House tendrá 12 episodios.</b><br><br>
+							En el sitio oficial para la adaptación animada del manga escrito e ilustrado por el grupo creativo Soumatou, Shadows House, se publicó la información de distribución de los paquetes Blu-ray/DVD recopilatorios. Esta información confirmó que la serie tendrá un total de trece episodios.
+
+						</p>
+					</a>
 				</div>
-			</a>
-			<div id="espaciado"></div>
-			<a href="#" class="noticia">
-				<img src="../imagenes/mushoku-tensei-polemica.jpg">
-				<div id="titulo-texto">
-					<h3>El director de Mushoku Tensei responde algunas preguntas.</h3>
-					<div id="solo-texto">
-						En el sitio oficial para la adaptación animada del manga escrito e ilustrado por el grupo creativo Soumatou, Shadows House, se publicó la información de distribución de los paquetes Blu-ray/DVD recopilatorios. Esta información confirmó que la serie tendrá un total de trece episodios.
-					</div>
-				</div>	
-				
-			</a>
-			<div id="espaciado"></div>
-			<a href="#" class="noticia">
-				<img src="../imagenes/mushoku-tensei-polemica.jpg">
-				<div id="titulo-texto">
-					<h3>El director de Mushoku Tensei responde algunas preguntas.</h3>
-					<div id="solo-texto">
-						En el sitio oficial para la adaptación animada del manga escrito e ilustrado por el grupo creativo Soumatou, Shadows House, se publicó la información de distribución de los paquetes Blu-ray/DVD recopilatorios. Esta información confirmó que la serie tendrá un total de trece episodios.
-					</div>
-				</div>	
-				
-			</a>
-			<div id="espaciado"></div>
-			<a href="#" class="noticia">
-				<img src="../imagenes/mushoku-tensei-polemica.jpg">
-				<div id="titulo-texto">
-					<h3>El director de Mushoku Tensei responde algunas preguntas.</h3>
-					<div id="solo-texto">
-						En el sitio oficial para la adaptación animada del manga escrito e ilustrado por el grupo creativo Soumatou, Shadows House, se publicó la información de distribución de los paquetes Blu-ray/DVD recopilatorios. Esta información confirmó que la serie tendrá un total de trece episodios.
-					</div>
-				</div>	
-				
-			</a>
-			<div id="espaciado"></div>
-			<a href="#" class="noticia">
-				<img src="../imagenes/mushoku-tensei-polemica.jpg">
-				<div id="titulo-texto">
-					<h3>El director de Mushoku Tensei responde algunas preguntas.</h3>
-					<div id="solo-texto">
-						En el sitio oficial para la adaptación animada del manga escrito e ilustrado por el grupo creativo Soumatou, Shadows House, se publicó la información de distribución de los paquetes Blu-ray/DVD recopilatorios. Esta información confirmó que la serie tendrá un total de trece episodios.
-					</div>
-				</div>	
-				
-			</a>
-					<div id="espaciado"></div>
-			<a href="#" class="noticia">
-				<img src="../imagenes/mushoku-tensei-polemica.jpg">
-				<div id="titulo-texto">
-					<h3>El director de Mushoku Tensei responde algunas preguntas.</h3>
-					<div id="solo-texto">
-						En el sitio oficial para la adaptación animada del manga escrito e ilustrado por el grupo creativo Soumatou, Shadows House, se publicó la información de distribución de los paquetes Blu-ray/DVD recopilatorios. Esta información confirmó que la serie tendrá un total de trece episodios.
-					</div>
-				</div>	
-				
-			</a>
-		</div>
-	</main>
-	<div id="anuncios">asdasd</div>
 
-	<footer>
-		<hr>
-		<div class="contenedor-logo">
-			<img src="../imagenes/logo.jpg" class="logo">
-			<div class="texto-logo">
-				<ul>
-					<li>Antonio Delgado Vietes <i class="fa fa-copyright"></i></li>
-					<li>1º DAW - Cenec Malaga</li>
-					<li><a href="#">Creditos</a></li>
-				</ul>
+				<div class="noticia">
+					<a href="#" class="in-noticia">
+						<img src="../imagenes/mushoku-tensei-polemica.jpg">
+						<p>
+							<b id="titulo-noticia">El director de Mushoku Tensei responde algunas preguntas.</b><br><br>
+							El portal AnimeNewsNetwork se entrevistó con el director Manabu Okamoto y el presidente de Studio Bind, Toshiya Ootomo, quienes participan en la producción de la adaptación animada de las novelas ligeras Mushoku Tensei: Jobless Reincarnation
+
+						</p>
+					</a>
+				</div>
+
+				<div class="noticia">
+					<a href="#" class="in-noticia">
+						<img src="../imagenes/snk-eren.jpg">
+						<p>
+							<b id="titulo-noticia">Se muestra el trailer de la segunda mitad de la temporada final de Ataque a los titanes.</b><br><br>
+							En la guía de programación para la televisora NHK se publicó la información oficial para lo que será el primer episodio para la temporada final del anime Shingeki no Kyojin (también conocido como Attack on Titan).
+						</p>
+					</a>
+				</div>
+				<div class="noticia">
+					<a href="#" class="in-noticia">
+						<img src="../imagenes/portada_arifureta.jpg">
+						<p>
+							<b id="titulo-noticia">La segunda temporada de Arifureta se entrena en 2022.</b><br><br>
+							En el sitio oficial para la adaptación animada de las novelas ligeras escritas por Ryo Shirakome, publicó el primer video promocional para la segunda temporada del proyecto. El video confirma que la serie se estrenará en el mes de enero de 2022.
+
+						</p>
+					</a>
+				</div>
+				<div class="noticia">
+					<a href="#" class="in-noticia">
+						<img src="../imagenes/portada-bokunohero.jpg">
+						<p>
+							<b id="titulo-noticia">La quinta temporada de Boku no Hero Academia revela los detalles de su primer Blu-ray/DVD.</b><br><br>
+							En el sitio oficial para la adaptación animada del manga de Kohei Horikoshi, Boku no Hero Academia (My Hero Academia), se publicaron la portada y los detalles del primer paquete Blu-ray/DVD recopilatorio de la quinta temporada del proyecto.
+
+						</p>
+					</a>
+				</div>
+				<div class="noticia">
+					<a href="#" class="in-noticia">
+						<img src="../imagenes/portada_nanatsu.jpg">
+						<p>
+							<b id="titulo-noticia">Nanatsu no Taizai: Fundo no Shinpan lanza su tercer video promocional</b><br><br>
+							En el sitio oficial para la franquicia animada de Nanatsu no Taizai se publicó el tercer video promocional para el anime Nanatsu no Taizai: Fundo no Shinpa, la temporada final del proyecto.
+
+						</p>
+					</a>
+				</div>
+				
+			</div>
+		</main>
+		<div class="zona-anuncios">
+			<div class="anuncios">
+				<div class="anuncio">
+					<img src="../imagenes/AnuncioCostra1.png">
+				</div>
+							<div class="anuncio">
+					<img src="../imagenes/AnuncioCostra1.png">
+				</div>
+							<div class="anuncio">
+					<img src="../imagenes/AnuncioCostra1.png">
+				</div>
+							<div class="anuncio">
+					<img src="../imagenes/AnuncioCostra1.png">
+				</div>
 			</div>
 		</div>
-	</footer>
 
-</body>
-</html>
+		<footer>
+			<hr>
+			<div class="contenedor-logo">
+				<img src="../imagenes/logo.jpg" class="logo">
+				<div class="texto-logo">
+					<ul>
+						<li>Antonio Delgado Vietes <i class="fa fa-copyright"></i></li>
+						<li>1º DAW - Cenec Malaga</li>
+						<li><a href="#">Creditos</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+	</html>
