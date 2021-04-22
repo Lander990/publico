@@ -8,4 +8,9 @@ function cargarUser() {
 }
 }
 
-
+function logout() {
+	sessionStorage.removeItem("nomUser");
+	window.alert("Logout con exito!");
+	$("#vacio").css("display","none");
+	$(".zona-anuncios").css("display","inherit");
+}
