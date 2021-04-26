@@ -14,7 +14,7 @@ body {
 
 nav {
 	overflow: hidden;
-	background-color: #333;
+	background-color: #333333;
 	grid-column: 1 / span 3;
 	grid-row: 1;
 }
@@ -32,7 +32,6 @@ nav a {
 	margin-bottom: 5px;
 	border: 1px solid;
 }
-
 
 /*Por defecto este div no se ve, aparece cuando un usuario registrado inicia sesión*/
 #vacio {
