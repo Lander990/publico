@@ -55,9 +55,13 @@ nav a {
 	cursor: pointer;
 }
 
-#login {
+#login, #logout {
 	float: right;
 	margin-right: 10px;
+}
+
+#logout {
+	display: none;
 }
 
 .mouse:hover a{

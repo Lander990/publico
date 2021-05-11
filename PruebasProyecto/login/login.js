@@ -10,7 +10,7 @@ function leerXML() {
       miFuncion(this);
     }
   };
-  xhr.open("GET", "registrados.xml", true);
+  xhr.open("GET", "https://lander990.github.io/publico/PruebasProyecto/login/registrados.xml", true);
   xhr.send();	
 }
 
@@ -26,7 +26,6 @@ function miFuncion(xml) {
   var nomForm = document.forms["Login"]["nombre"].value; //Guarda el nombre que se ha puesto en el formulario
   var passForm = document.forms["Login"]["pwd"].value; //Guarda la contraseña que se ha puesto en el formulario
 
-window.alert("Nombre y/o contraseña incorrectos.");
   for (i = 0; i <x.length; i++) { 
 	// leo las etiquetas que me interesan del objeto
 	usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
@@ -36,24 +35,17 @@ window.alert("Nombre y/o contraseña incorrectos.");
 	//alguno de los campos del XML
 	if ((nomForm == usrNom) && (passForm == usrPsw)) {
 		esCorrecto = true;
-		window.alert("Nombre y/o contraseña incorrectos.");
 	}
 
-
-	// actualizo el array bidimensional con los usuarios registrados
-	usuario = [usrNom,usrPsw];
-	registrados.push(usuario);
   }
 
   //Si el nombre y la contraseña es correcto lo guarda en el sessionStorage y devuelve a la pagina
   if (esCorrecto == true) {
   	sessionStorage.setItem("nomUser", document.forms["Login"]["nombre"].value);
-  	window.history.go(-1);
+	window.location.href = '../index.html';
   } else {
   	//Si no es correcto mando una alerta
   	window.alert("Nombre y/o contraseña incorrectos.");
   }
-
   // muestro en consola el array de usuarios registrados
-  return false;
 }
