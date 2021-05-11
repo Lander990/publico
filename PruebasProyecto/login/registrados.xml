@@ -6,18 +6,18 @@
   </usuario>
   <usuario id="2">
     <nombre>USR2</nombre>
-    <estatus>clave2</estatus>
+    <clave>clave2</clave>
   </usuario>
   <usuario id="3">
     <nombre>USR3</nombre>
-    <estatus>clave3</estatus>
+    <clave>clave3</clave>
   </usuario>
   <usuario id="4">
     <nombre>USR4</nombre>
-    <estatus>clave4</estatus>
+    <clave>clave4</clave>
   </usuario>
   <usuario id="5">
     <nombre>Antonio</nombre>
-    <estatus>delgado</estatus>
+    <clave>delgado</clave>
   </usuario>
 </registrados>
