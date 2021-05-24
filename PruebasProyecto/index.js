@@ -21,3 +21,10 @@ function logout() {
 
 }
 
+function abrirVideo()	 {
+	$("#myModal").css("display","block");
+}
+
+function cerrarVideo()	{
+	$("#myModal").css("display","none");
+}

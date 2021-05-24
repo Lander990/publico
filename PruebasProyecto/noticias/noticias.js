@@ -20,3 +20,11 @@ function logout() {
 	$("#logout").css("display","none");
 
 }
+
+function abrirVideo()	 {
+	$("#myModal").css("display","block");
+}
+
+function cerrarVideo()	{
+	$("#myModal").css("display","none");
+}
