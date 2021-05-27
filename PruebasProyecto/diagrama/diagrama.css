@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #666;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto 10vh;
+}
+
+nav {
+	overflow: hidden;
+	background-color: #333333;
+	grid-column: 1 / span 3;
+	grid-row: 1;
+}
+
+nav a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 12px 14px;
+	text-decoration: none;
+	border-color: white;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid;
+}
+
+/*Por defecto este div no se ve, aparece cuando un usuario registrado inicia sesión*/
+#vacio {
+	background-color: none;
+	border: none;
+	display: none;
+}
+
+#selected {
+	border-color: orange;
+	color: orange;
+}
+
+.mouse {
+	margin-left: 10px;
+}
+
+.mouse:hover{
+	color: yellow;
+	cursor: pointer;
+}
+
+#login, #logout {
+	float: right;
+	margin-right: 10px;
+}
+
+#logout {
+	display: none;
+}
+
+.mouse:hover a{
+	color: yellow;
+}
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.imagenDiagrama {
+	grid-column: 1 / span 3;
+	grid-row: 2;
+	width: 100%;
+	max-height: 800px;
+	object-fit: cover;
+}
+
+
+
+footer {
+	grid-row: 4;
+	grid-column: 1 / span 3;
+}
+
+.logo {
+	height: 170px;
+	width: 170px;
+	border-radius: 100px;
+	object-fit: contain;
+}
+
+.texto-logo {
+	padding-top: 20px; 
+	color: white;
+
+}
+
+.contenedor-logo {
+	display: flex;
+}
+
+.contenedor-logo ul {
+	list-style: none;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+	nav, nav a, #login{
+		display: block;
+		float: none;
+	}
+
+	.texto-en-imagen-centrado {
+		font-size: 30px;
+	}
+
+
+}
+
+

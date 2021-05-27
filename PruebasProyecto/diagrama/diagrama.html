@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Kyomiaru - Inicio</title>
+	<meta charset="utf-8">
+	<meta title="Kyomiaru - Noticias interesantes sobre anime">
+	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
+	<link rel="stylesheet" type="text/css" href="diagrama.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="imagenes/logo.jpg" sizes="32x32">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="diagrama.js"></script>
+</head>
+<body onload="cargarUser()">
+	<nav>
+		<a class="mouse" href="../index.html">Inicio</a>
+		<a class="mouse" href="../noticias/noticias.html">Noticias</a>
+		<a class="mouse" href="../dolly/dolly.html">Dolly</a>
+		<a class="mouse" href="" id="selected">Diagramas</a>
+		<a id="vacio" class="entrada mouse"></a>
+
+		<a class="mouse" id="logout" onclick="logout()">Cerrar Sesion</a>
+		<a class="mouse" href="../login/login.html" id="login">Iniciar sesion</a>
+	</nav>
+	<div class="imagenDiagrama">
+		<img src="adelgado_EstadoLoginLogout.jpg"/>
+	</div>
+	<div id="imagenDiagramaActividad">
+		<img src="./diagramaActividad.jpg"/>
+	</div>
+
+	<div id="myModal" class="modal">
+		<span class="close" onclick="cerrarVideo()">&times;</span>
+		<iframe class="modal-content" width="1000" height="600" src="https://www.youtube.com/embed/Z7-cYkrUHrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<footer>
+		<hr>
+		<div class="contenedor-logo">
+			<img src="../imagenes/logo.jpg" class="logo">
+			<div class="texto-logo">
+				<ul>
+					<li>Antonio Delgado Vietes <i class="fa fa-copyright"></i></li>
+					<li>1º DAW - Cenec Malaga</li>
+					<li id="prueba" onclick="abrirVideo()"><a href="#">Creditos</a></li>
+					<li>PULSAR EL BOTON DE CREDITOS</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
