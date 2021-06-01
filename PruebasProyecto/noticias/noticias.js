@@ -7,7 +7,7 @@ function cargarUser() {
 
 	$("#login").css("display","none");
 	$("#logout").css("display","initial");
-
+	$(".zona-anuncios").css("display","none");
 }
 }
 
@@ -18,5 +18,6 @@ function logout() {
 
 	$("#login").css("display","initial");
 	$("#logout").css("display","none");
+	$(".zona-anuncios").css("display","initial");
 
 }
