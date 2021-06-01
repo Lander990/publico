@@ -16,7 +16,7 @@
 		<a class="mouse" href="#" id="selected">Inicio</a>
 		<a class="mouse" href="./noticias/noticias.html">Noticias</a>
 		<a class="mouse" href="./dolly/dolly.html">Dolly</a>
-		<a class="mouse" href="">Contacto</a>
+		<a class="mouse" href="./diagrama/diagrama.html">Diagramas</a>
 		<a id="vacio" class="entrada mouse"></a>
 
 		<a class="mouse" id="logout" onclick="logout()">Cerrar Sesion</a>
@@ -55,6 +55,12 @@
 
 		</div>
 	</div>
+
+	<div id="myModal" class="modal">
+		<span class="close" onclick="cerrarVideo()">&times;</span>
+		<iframe class="modal-content" width="1000" height="600" src="https://www.youtube.com/embed/Z7-cYkrUHrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
 	<footer>
 		<hr>
 		<div class="contenedor-logo">
@@ -63,7 +69,7 @@
 				<ul>
 					<li>Antonio Delgado Vietes <i class="fa fa-copyright"></i></li>
 					<li>1º DAW - Cenec Malaga</li>
-					<li><a href="#">Creditos</a></li>
+					<li id="prueba" onclick="abrirVideo()"><a href="#">Creditos</a></li>
 				</ul>
 			</div>
 		</div>

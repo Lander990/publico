@@ -21,3 +21,11 @@ function logout() {
 	$(".zona-anuncios").css("display","initial");
 
 }
+
+function abrirVideo()	 {
+	$("#myModal").css("display","block");
+}
+
+function cerrarVideo()	{
+	$("#myModal").css("display","none");
+}

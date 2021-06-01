@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta title="Kyomiaru - Noticias interesantes sobre anime">
 	<meta name="description" content="Noticias, fechas de proximos animes, adelantos y mas! Todo reunido en una misma pagina!">
+	<link rel="icon" href="imagenes/logo.jpg" sizes="32x32">
 	<link rel="stylesheet" type="text/css" href="dolly.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" href="imagenes/logo.jpg" sizes="32x32">
@@ -16,7 +17,7 @@
 		<a class="mouse" href="../index.html">Inicio</a>
 		<a class="mouse" href="../noticias/noticias.html">Noticias</a>
 		<a class="mouse" href="#"  id="selected">Dolly</a>
-		<a class="mouse" href="">Contacto</a>
+		<a class="mouse" href="../diagrama/diagrama.html">Diagramas</a>
 		<a id="vacio" class="entrada mouse"></a>
 
 		<a class="mouse" id="logout" onclick="logout()">Cerrar Sesion</a>
@@ -40,6 +41,10 @@
 	</div>
 		<input type="button" name="abrirPDF" value="Abrir PDF" onclick="window.location.href = 'adelgado_efectoDolly.pdf'">
 
+		<div id="myModal" class="modal">
+			<span class="close" onclick="cerrarVideo()">&times;</span>
+			<iframe class="modal-content" width="1000" height="600" src="https://www.youtube.com/embed/Z7-cYkrUHrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 
 	<footer>
 		<hr>
@@ -49,7 +54,7 @@
 				<ul>
 					<li>Antonio Delgado Vietes <i class="fa fa-copyright"></i></li>
 					<li>1º DAW - Cenec Malaga</li>
-					<li><a href="#">Creditos</a></li>
+					<li onclick="abrirVideo()"><a href="#">Creditos</a></li>
 				</ul>
 			</div>
 		</div>
